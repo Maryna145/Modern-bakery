@@ -389,10 +389,13 @@ a{
 .address-icon:hover{
   fill: var(--color-brand-light);
 }
+.address-copyright{
+  font-style: normal;
+}
 /* Modal */
 .backdrop{
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: center;
   position: fixed;
   top: 0;
@@ -408,7 +411,7 @@ a{
   background-color: var(--color-primary-light);
   border-radius: 32px;
 }
-.modal-Btn-Close{
+.modal-btn-close{
   position: absolute;
   right: 40px;
   top: 40px;
