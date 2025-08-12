@@ -21,7 +21,7 @@
               <li><a class="link" href="#contacts_section">Контакти</a></li>
             </ul>
           </nav>
-          <button type="button" class="button">Замовити дзвінок</button>
+          <button type="button" class="button modal-Btn-Open">Замовити дзвінок</button>
         </div>
       </div>
     </header>
@@ -69,7 +69,7 @@
       <section class="section" id="chefs_section">
         <div class="container">
           <h2 class="chefs-title section-title">
-            Наші найкраще <span class="accent">шеф-кухарі</span>
+            Наші найкраще <br><span class="accent">шеф-кухарі</span>
           </h2>
           <ul class="chefs-list">
             <li class="chefs-item">
@@ -174,7 +174,7 @@
                 Приєднуйся до мережі пекарень
               </h2>
               <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-              <button type="button" class="button">Замовити дзвінок</button>
+              <button class="button modal-Btn-Open" type="button" >Замовити дзвінок</button>
             </div>
             <iframe
               class="contact-map"
@@ -249,5 +249,13 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-Btn-Close" type="button">
+          Close
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
