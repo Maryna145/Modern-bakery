@@ -1,5 +1,6 @@
 @import './utils/variables';
 @import './base';
+@import './utils/texts';
 @import './layouts/section';
 @import './layouts/container';
 @import './components/buttons';
@@ -10,9 +11,12 @@
 @import './layouts/traditions-section';
 @import './layouts/advantage-section';
 @import './layouts/chefs-section';
+@import './components/chef-card';
 @import './layouts/formats-section';
+@import './components/format-card';
 @import './components/carousel-button';
 @import './layouts/contact-section';
+@import './components/terms';
 @import './layouts/footer';
 @import './layouts/modal';
 @import './layouts/forms';
