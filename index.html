@@ -27,9 +27,19 @@
               <li><a class="link" href="#contacts_section">Контакти</a></li>
             </ul>
           </nav>
-          <button type="button" class="button modal-btn-open">
+          <button type="button" class="button header__button modal-btn-open">
             Замовити дзвінок
           </button>
+          <button class="header__burger menu-btn-open" type="button">
+            <svg width="24px" height="24px">
+              <use href="./images/menu.svg"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu">
+            <button class="mobile-menu__btn-close menu-btn-close" type="button">
+              Close
+            </button>
+          </div>
         </div>
       </div>
     </header>
@@ -39,6 +49,9 @@
           <h1 class="hero-section__title">
             <span class="text-brand">Сучасна</span> пекарня
           </h1>
+          <button type="button" class="button hero-section__button header__button modal-btn-open">
+            Замовити дзвінок
+          </button>
         </div>
       </section>
       <section class="advantages-section">
@@ -78,11 +91,12 @@
                 обслуговування!
               </p>
             </div>
-            <img src="./images/пекар.jpg" alt="Пекар з хлібом" />
+            <img class="traditions-section__img" 
+            srcset="./images/пекар.jpg 1x, ./images/пекар@2x.jpg 2x" src="./images/пекар.jpg" alt="Пекар з хлібом" />
           </div>
         </div>
       </section>
-      <section class="chefs-section section" id="chefs_section">
+      <!-- <section class="chefs-section section" id="chefs_section">
         <div class="container">
           <h2 class="chefs-section__title section__title">
             Наші найкраще <br /><span class="text-brand-dark">шеф-кухарі</span>
@@ -145,7 +159,11 @@
             <ul class="formats-section__list">
               <li class="formats-section__item">
                 <article class="format-card">
-                  <img class="format-card__img" src="./images/Walrus.jpg" alt="" />
+                  <img
+                    class="format-card__img"
+                    src="./images/Walrus.jpg"
+                    alt=""
+                  />
                   <h3 lang="en" class="format-card__title">Walrus</h3>
                   <div class="format-card__text">
                     <p>Площа: до 120 м2</p>
@@ -176,7 +194,11 @@
               </li>
               <li class="formats-section__item">
                 <article class="format-card">
-                  <img class="format-card__img" src="./images/handlebar.jpg" alt="" />
+                  <img
+                    class="format-card__img"
+                    src="./images/handlebar.jpg"
+                    alt=""
+                  />
                   <h3 lang="en" class="format-card__title">Handlebar</h3>
                   <div class="format-card__text">
                     <p>Площа: до 15 м2</p>
@@ -269,9 +291,9 @@
             ></iframe>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer-container">
           <nav class="footer-nav">
@@ -331,9 +353,11 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden">
       <div class="modal">
-        <button class="modal__btn-close modal-btn-close" type="button">Close</button>
+        <button class="modal__btn-close modal-btn-close" type="button">
+          Close
+        </button>
         <h2>Замовити дзвінок</h2>
         <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
         <form name="call-form" autocomplete="on">
@@ -382,7 +406,7 @@
             />
           </div>
 
-          <button class="modal__button button " type="submit">
+          <button class="modal__button button" type="submit">
             Замовити дзвінок
           </button>
           <p class="form-term">
@@ -391,7 +415,8 @@
           </p>
         </form>
       </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
