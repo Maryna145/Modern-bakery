@@ -8,6 +8,9 @@
     justify-content: space-between;
     gap: 40px;
     align-items: flex-start;
+    @media screen and (min-width: $bp-tablet) {
+    gap: 20px;
+  }
   }
   &__content {
     max-width: 710px;

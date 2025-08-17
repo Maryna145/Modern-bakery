@@ -1,19 +1,73 @@
 .contact-section {
-  padding-bottom: 96px;
+  padding-bottom: 0;
+  @media screen and (min-width: $bp-tablet) {
+    padding-bottom: 96px;
+  }
   &__title {
-    margin-bottom: 16px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    text-align: center;
+    @media screen and (min-width: $bp-tablet) {
+      text-align: left;
+      font-size: 64px;
+      margin-bottom: 16px;
+      font-weight: 900;
+    }
+  }
+  &__paragraph {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-brand-dark);
+    text-align: left;
+    margin-bottom: 42px;
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 14px;
+      color: var(--color-brand-dark);
+      margin-bottom: 24px;
+      text-align: center;
+    }
   }
   &__container {
     display: flex;
+    flex-direction: column;
     gap: 24px;
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 32px;
+    }
   }
   &__map {
     flex-shrink: 0;
     border: none;
     border-radius: 16px;
+    height: 176px;
+    margin: 0 -24px;
+    @media screen and (min-width: $bp-tablet) {
+      margin: auto;
+      width: 320px;
+      height: 500px;
+    }
+    @media screen and (min-width: $bp-dekstop) {
+      width: 600px;
+      height: 595px;
+    }
   }
   &__button {
     display: block;
-    margin: 0 auto 16px;
+    margin: 0 auto;
+    padding: 10px 24px;
+    font-size: 16px;
+    @media screen and (min-width: $bp-mobile) {
+      font-size: 18px;
+      margin: 0 auto 16px;
+      padding: 16px 32px;
+    }
+  }
+  &__form-term {
+    @media screen and (max-width: $bp-mobile) {
+      display: none;
+    }
   }
 }

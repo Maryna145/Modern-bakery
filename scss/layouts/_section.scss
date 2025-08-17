@@ -6,10 +6,11 @@
   &__title {
     color: var(--color-primary-dark);
     font-size: 32px;
-    font-weight: 900;
+    font-weight: 600;
     line-height: 1.5;
-    @media screen and (min-width: $bp-dekstop) {
+    @media screen and (min-width: $bp-tablet) {
       font-size: 64px;
+      font-weight: 900;
       line-height: 1.3;
     }
   }

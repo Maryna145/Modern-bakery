@@ -1,20 +1,33 @@
 .formats-section {
-  &__conteiner {
+  &__slider {
     display: flex;
     gap: 32px;
     align-items: center;
   }
   &__title {
-    margin: 0 auto 80px;
+    font-size: 32px;
+    margin: 0 auto 24px;
     max-width: 310px;
     text-align: center;
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 64px;
+      margin: 0 auto 80px;
+    }
+  }
+  &__container {
+    overflow: hidden;
   }
   &__list {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+    margin-bottom: 16px;
+    @media screen and (min-width: $bp-tablet) {
+       margin-bottom: 32px;
+    }
   }
-  &__item {
-    flex-basis: calc((100% - 40px) / 3);
+  &__button {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+    }
   }
 }

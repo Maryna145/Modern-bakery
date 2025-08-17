@@ -1,5 +1,8 @@
 .input {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
+  @media screen and (min-width: $bp-tablet) {
+    margin-bottom: 24px;
+  }
   &__control {
     width: 100%;
     line-height: 1.17;
@@ -8,12 +11,18 @@
     border-radius: 8px;
     background-color: transparent;
     color: var(--color-light);
+    @media screen and (max-width: $bp-mobile) {
+      padding: 8px 24px;
+    }
     &::placeholder {
       left: 42px;
       top: 16px;
-      font-size: 16px;
+      font-size: 18px;
       line-height: 1.17;
       color: var(--color-light);
+      @media screen and (max-width: $bp-tablet) {
+        font-size: 14px;
+      }
     }
     &:focus {
       border-color: var(--color-brand-light);
@@ -22,4 +31,3 @@
     }
   }
 }
-

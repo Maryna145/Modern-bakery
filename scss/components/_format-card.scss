@@ -11,8 +11,8 @@
   border-radius: 16px;
   padding: 24px;
   height: 444px;
-  transition: transform 0.3s;
   position: relative;
+  overflow: hidden;
   &__img {
     position: absolute;
     width: 100%;
@@ -34,6 +34,3 @@
     color: var(--color-primary-light);
   }
 }
-.format-card:hover {
-    transform: scale(1.05);
-  }

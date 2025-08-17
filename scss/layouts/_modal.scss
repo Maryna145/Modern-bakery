@@ -15,6 +15,7 @@
     visibility: hidden;
     pointer-events: none;
   }
+  z-index: 2;
 }
 .modal {
   position: relative;
@@ -24,18 +25,75 @@
   max-height: 880px;
   background-color: var(--color-primary-light);
   border-radius: 32px;
-  padding: 128px;
+  padding: 48px;
   overflow-y: auto;
+  z-index: 2;
+  @media screen and (min-width: $bp-tablet) {
+    padding: 128px;
+  }
   &__btn-close {
     position: absolute;
-    right: 40px;
-    top: 40px;
+    right: 20px;
+    top: 20px;
+    background: transparent;
+    border: none;
+    fill: var(--color-primary-dark);
+    cursor: pointer;
+    @media screen and (min-width: $bp-dekstop) {
+      right: 40px;
+      top: 40px;
+    }
   }
   &__form-field {
     margin-bottom: 32px;
   }
-  &__button{
+  &__button {
     display: block;
     margin: 0 auto 24px;
+  }
+  &__title {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.3;
+    text-align: center;
+    margin-bottom: 8px;
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 64px;
+    }
+  }
+  &__paragraph {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-brand-dark);
+    text-align: center;
+    margin-bottom: 24px;
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 18px;
+      margin-bottom: 72px;
+    }
+  }
+  &::before,
+  &::after {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    content: "";
+    bottom: 0;
+  }
+  &::before {
+    width: 106px;
+    height: 224px;
+    top: 630px;
+    right: 15px;
+    background-image: url(../images/modal-bread.png);
+  }
+  &::after {
+    width: 138px;
+    height: 138px;
+    bottom: 10px;
+    top: 710px;
+    right: 0;
+    background-image: url(../images/modal-dop-bread.png);
   }
 }
