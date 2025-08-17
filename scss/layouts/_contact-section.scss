@@ -22,7 +22,7 @@
     color: var(--color-brand-dark);
     text-align: left;
     margin-bottom: 42px;
-    @media screen and (max-width: $bp-mobile) {
+    @media screen and (max-width: $bp-tablet) {
       font-size: 14px;
       color: var(--color-brand-dark);
       margin-bottom: 24px;
