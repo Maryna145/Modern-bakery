@@ -9,13 +9,13 @@
   justify-content: center;
   flex-shrink: 0;
   transition: all 0.2s;
-}
-.carousel-button:hover {
-  background-color: var(--color-primary-dark);
-}
-.carousel-button:hover .carousel-arrow {
-  fill: var(--color-primary-light);
-}
-.carousel-button.next {
-  transform: rotate(0.5turn);
+  &:hover {
+    background-color: var(--color-primary-dark);
+  }
+  &:hover .carousel-arrow {
+    fill: var(--color-primary-light);
+  }
+  & .next {
+    transform: rotate(0.5turn);
+  }
 }
